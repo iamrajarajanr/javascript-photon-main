@@ -1,0 +1,3 @@
+"https://api.pexels.com/v1/curated?per_page=15&page=1";
+
+"https://api.pexels.com/v1/search?query=cat+query&per_page=15&page=1`
