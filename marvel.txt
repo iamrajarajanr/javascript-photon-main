@@ -2,8 +2,8 @@
 
 // async function getMarvelCharacters() {
 //   const ts = 1; // just use 1 for timestamp
-//   const publicKey = "your publickey";
-//   const privateKey = "your privateKey";
+//   const publicKey = "ca2912ee9d3485bf0d43cca00d30eacf";
+//   const privateKey = "e49a2d47c110495c3ce765d5ff25cabed4fd38a5";
 
 //   // make md5 hash: ts + privateKey + publicKey
 //   const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
@@ -18,9 +18,9 @@
 
 
 
-Your public key
-ca2912ee9d3485bf0d43cca00d30eacf
+//Your public key
+//ca2912ee9d3485bf0d43cca00d30eacf
 
 
-Your private key
-e49a2d47c110495c3ce765d5ff25cabed4fd38a5
+//Your private key
+//e49a2d47c110495c3ce765d5ff25cabed4fd38a5

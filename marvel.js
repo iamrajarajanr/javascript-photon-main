@@ -1,0 +1,26 @@
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+async function getMarvelCharacters() {
+  const ts = 1; // just use 1 for timestamp
+  const publicKey = "ca2912ee9d3485bf0d43cca00d30eacf";
+  const privateKey = "e49a2d47c110495c3ce765d5ff25cabed4fd38a5";
+
+  // make md5 hash: ts + privateKey + publicKey
+  const hash = CryptoJS.MD5(ts + privateKey + publicKey).toString();
+
+  const url = `https://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}&limit=10`;
+
+  const res = await fetch(url);
+  const data = await res.json();
+  console.log(data);
+}
+getMarvelCharacters();
+
+
+
+//Your public key
+//ca2912ee9d3485bf0d43cca00d30eacf
+
+
+//Your private key
+//e49a2d47c110495c3ce765d5ff25cabed4fd38a5
